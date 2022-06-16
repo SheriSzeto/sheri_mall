@@ -1,0 +1,12 @@
+.DS_Store
+node_modules/
+dist/
+npm-debug.log*
+*.wpy___jb_tmp___
+project.config.json
+.wepycache
+.idea
+.tmp
+wecos_backup/
+.vscode
+.history
