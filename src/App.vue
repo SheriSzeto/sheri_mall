@@ -12,6 +12,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="less">
 /*每个页面公共css */
+@import url(styles/index.less);
 </style>
