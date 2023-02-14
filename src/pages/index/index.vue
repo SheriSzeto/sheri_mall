@@ -1,9 +1,3 @@
-<!--
- * @Author: sheri
- * @Date: 2022-06-09 21:00:48
- * @LastEditors: sheri
- * @LastEditTime: 2022-09-02 09:44:34
--->
 <template>
   <view class="content">
     <!-- 类目 -->
@@ -17,7 +11,7 @@
 export default {
   data() {
     return {
-      title: "Hello vvv",
+      title: "Hello sheri",
       category: [
         {
           id: 1,
