@@ -2,11 +2,11 @@
  * @Author: sheri
  * @Date: 2022-06-09 21:00:48
  * @LastEditors: sheri
- * @LastEditTime: 2022-06-16 10:45:36
+ * @LastEditTime: 2022-09-02 09:44:34
 -->
 <template>
   <view class="content">
-    <image class="logo" src="/static/logo.png"></image>
+    <!-- 类目 -->
     <view class="text-area">
       <text class="title test">{{ title }}</text>
     </view>
@@ -17,12 +17,34 @@
 export default {
   data() {
     return {
-      title: 'Hello',
-    }
+      title: "Hello vvv",
+      category: [
+        {
+          id: 1,
+          icon: "",
+          name: "",
+        },
+        {
+          id: 2,
+          icon: "",
+          name: "",
+        },
+        {
+          id: 3,
+          icon: "",
+          name: "",
+        },
+        {
+          id: 4,
+          icon: "",
+          name: "",
+        },
+      ],
+    };
   },
   onLoad() {},
   methods: {},
-}
+};
 </script>
 
 <style lang="less">
