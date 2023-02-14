@@ -3,13 +3,29 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "雪梨的小卖部",
+				"navigationBarBackgroundColor": "#FFB602"
 			}
 		},
 		{
-			"path": "pages/logs/index",
+			"path": "pages/cart/index",
 			"style": {
-				"navigationBarTitleText": "log"
+				"navigationBarTitleText": "购物车",
+				"navigationBarBackgroundColor": "#FFB602"
+			}
+		},
+		{
+			"path": "pages/category/index",
+			"style": {
+				"navigationBarTitleText": "分类",
+				"navigationBarBackgroundColor": "#FFB602"
+			}
+		},
+		{
+			"path": "pages/user/index",
+			"style": {
+				"navigationBarTitleText": "个人中心",
+				"navigationBarBackgroundColor": "#FFB602"
 			}
 		}
 	],
@@ -20,17 +36,26 @@
 		"backgroundColor": "#F8F8F8"
 	},
   "tabBar": {
+		"selectedColor": "#FFB602",
     "list": [{
+			"iconPath": "static/assets/images/home.png",
       "pagePath": "pages/index/index",
+			"selectedIconPath": "static/assets/images/home-sel.png",
       "text": "首页"
     }, {
-      "pagePath": "pages/logs/index",
+			"iconPath": "static/assets/images/category.png",
+			"selectedIconPath": "static/assets/images/category-sel.png",
+      "pagePath": "pages/category/index",
       "text": "分类"
     }, {
-      "pagePath": "pages/logs/index",
+			"iconPath": "static/assets/images/cart.png",
+			"selectedIconPath": "static/assets/images/cart-sel.png",
+      "pagePath": "pages/cart/index",
       "text": "购物车"
     }, {
-      "pagePath": "pages/logs/index",
+			"iconPath": "static/assets/images/user.png",
+			"selectedIconPath": "static/assets/images/user-sel.png",
+      "pagePath": "pages/user/index",
       "text": "我的"
     }]
   }
