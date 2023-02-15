@@ -1,6 +1,12 @@
+<!--
+ * @Author: sheri
+ * @Date: 2022-06-09 21:00:48
+ * @LastEditors: sheri
+ * @LastEditTime: 2022-06-21 11:33:46
+-->
 <template>
   <view class="content">
-    <!-- 类目 -->
+    <image class="logo" src="/static/logo.png"></image>
     <view class="text-area">
       <text class="title test">{{ title }}</text>
     </view>
@@ -11,34 +17,12 @@
 export default {
   data() {
     return {
-      title: "Hello sheri",
-      category: [
-        {
-          id: 1,
-          icon: "",
-          name: "",
-        },
-        {
-          id: 2,
-          icon: "",
-          name: "",
-        },
-        {
-          id: 3,
-          icon: "",
-          name: "",
-        },
-        {
-          id: 4,
-          icon: "",
-          name: "",
-        },
-      ],
-    };
+      title: 'Hello',
+    }
   },
   onLoad() {},
   methods: {},
-};
+}
 </script>
 
 <style lang="less">
