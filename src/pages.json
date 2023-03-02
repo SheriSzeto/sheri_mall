@@ -1,4 +1,11 @@
 {
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			// uni-ui 规则如下配置
+			"^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+		}
+	},
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
 			"path": "pages/index/index",
@@ -27,6 +34,13 @@
 				"navigationBarTitleText": "个人中心",
 				"navigationBarBackgroundColor": "#FFB602"
 			}
+		},
+		{
+			"path": "pages/product/detail",
+			"style": {
+				"navigationBarTitleText": "商品详情",
+				"navigationBarBackgroundColor": "#FFB602"
+			}
 		}
 	],
 	"globalStyle": {
@@ -34,29 +48,5 @@
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
-	},
-  "tabBar": {
-		"selectedColor": "#FFB602",
-    "list": [{
-			"iconPath": "static/assets/images/home.png",
-      "pagePath": "pages/index/index",
-			"selectedIconPath": "static/assets/images/home-sel.png",
-      "text": "首页"
-    }, {
-			"iconPath": "static/assets/images/category.png",
-			"selectedIconPath": "static/assets/images/category-sel.png",
-      "pagePath": "pages/category/index",
-      "text": "分类"
-    }, {
-			"iconPath": "static/assets/images/cart.png",
-			"selectedIconPath": "static/assets/images/cart-sel.png",
-      "pagePath": "pages/cart/index",
-      "text": "购物车"
-    }, {
-			"iconPath": "static/assets/images/user.png",
-			"selectedIconPath": "static/assets/images/user-sel.png",
-      "pagePath": "pages/user/index",
-      "text": "我的"
-    }]
-  }
+	}
 }
