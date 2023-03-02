@@ -2,7 +2,7 @@
  * @Author: sheri
  * @Date: 2022-06-09 21:00:48
  * @LastEditors: sheri 13580370252@163.com
- * @LastEditTime: 2022-10-26 18:41:18
+ * @LastEditTime: 2023-03-02 15:07:05
 -->
 <template>
   <view class="category">
@@ -10,8 +10,29 @@
       <view v-for="(item, index) in categories" class="category-left__field" :class="{ 'active' : item.id === activeTab}" @click="onChooseCategory(item.id)">{{ item.name }}</view>
     </view>
     <view class="category-right">
-      <view class="category-right__field"> 
+      <!-- <view class="category-right__field"> 
         <view class="category-right__field__title">热卖精选榜单 <text class="iconfont icon-right"></text></view>
+        <view class="category-right__field__main">
+          <view class="category-right__field__main__item">
+            <image src="/static/assets/images/clothes.png" />
+            <view class="name">宝宝衣服</view>
+          </view>
+          <view class="category-right__field__main__item">
+            <image src="/static/assets/images/clothes.png" />
+            <view class="name">宝宝衣服</view>
+          </view>
+          <view class="category-right__field__main__item">
+            <image src="/static/assets/images/clothes.png" />
+            <view class="name">宝宝衣服</view>
+          </view>
+          <view class="category-right__field__main__item">
+            <image src="/static/assets/images/clothes.png" />
+            <view class="name">宝宝衣服</view>
+          </view>
+        </view>
+      </view> -->
+      <view class="category-right__field"> 
+        <view class="category-right__field__title">3岁+ <text class="iconfont icon-right"></text></view>
         <view class="category-right__field__main">
           <view class="category-right__field__main__item">
             <image src="/static/assets/images/clothes.png" />
@@ -32,7 +53,7 @@
         </view>
       </view>
       <view class="category-right__field"> 
-        <view class="category-right__field__title">热卖精选榜单 <text class="iconfont icon-right"></text></view>
+        <view class="category-right__field__title">1-3岁 <text class="iconfont icon-right"></text></view>
         <view class="category-right__field__main">
           <view class="category-right__field__main__item">
             <image src="/static/assets/images/clothes.png" />
@@ -53,28 +74,7 @@
         </view>
       </view>
       <view class="category-right__field"> 
-        <view class="category-right__field__title">热卖精选榜单 <text class="iconfont icon-right"></text></view>
-        <view class="category-right__field__main">
-          <view class="category-right__field__main__item">
-            <image src="/static/assets/images/clothes.png" />
-            <view class="name">宝宝衣服</view>
-          </view>
-          <view class="category-right__field__main__item">
-            <image src="/static/assets/images/clothes.png" />
-            <view class="name">宝宝衣服</view>
-          </view>
-          <view class="category-right__field__main__item">
-            <image src="/static/assets/images/clothes.png" />
-            <view class="name">宝宝衣服</view>
-          </view>
-          <view class="category-right__field__main__item">
-            <image src="/static/assets/images/clothes.png" />
-            <view class="name">宝宝衣服</view>
-          </view>
-        </view>
-      </view>
-      <view class="category-right__field"> 
-        <view class="category-right__field__title">热卖精选榜单 <text class="iconfont icon-right"></text></view>
+        <view class="category-right__field__title">12月以下 <text class="iconfont icon-right"></text></view>
         <view class="category-right__field__main">
           <view class="category-right__field__main__item">
             <image src="/static/assets/images/clothes.png" />
@@ -104,11 +104,8 @@ export default {
     return {
       categories: [
         {id: 1, name: '玩具乐园'},
-        {id: 2, name: '日用专区'},
-        {id: 3, name: '品质童装'},
-        {id: 4, name: '奶粉辅食'},
-        {id: 5, name: '玩具乐园'},
-        {id: 6, name: '玩具乐园'},
+        {id: 2, name: '品质童装'},
+        {id: 3, name: '妈妈好物'},
       ],
       activeTab: 1,
     }
@@ -122,7 +119,7 @@ export default {
 }
 </script>
 
-<style lang="less">
+<style lang="scss" scoped>
 .category {
   background: #f5f5f5;
   display: flex;
